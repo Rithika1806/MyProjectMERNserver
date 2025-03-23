@@ -30,3 +30,4 @@ const userAuthorSchema=new mongoose.Schema({
 //create model
 const UserAuthor=mongoose.model('userauthor',userAuthorSchema)
 module.exports=UserAuthor
+

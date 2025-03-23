@@ -9,7 +9,7 @@ const Article=require('../models/articleModel')
 //implement API
 
 userApp.get('/',expressAsyncHandler(async(req,res)=>{
-    const userList=await UserAuthor.find({isActive:true,role:"user"})
+    const userList=await UserAuthor.find({role:"user"})
     res.send({message:"All users",payload:userList})
 }))
 
